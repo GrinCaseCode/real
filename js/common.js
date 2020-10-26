@@ -121,6 +121,15 @@
     }
   });
 
+  $('.tabs li a').click(function(event) {
+    event.preventDefault();
+    $(this).parent().parent().find("li").removeClass('active');
+    $(this).parent().addClass('active');
+    $(this).parent().parent().siblings(".tab-container").find(".tab-pane").hide();
+    var selectTab = $(this).attr("href");
+    $(selectTab).fadeIn();
+  });
+
   $('img').on('dragstart', function (event) {
     event.preventDefault();
   });
@@ -165,18 +174,19 @@
     },
   });
 
-  var certsSlider = new Swiper('#certs__slider', {
-    slidesPerView: 2,
+  $('.certs__slider').each(function(){
+        var swiper = new Swiper(this, {
+         slidesPerView: 2,
     spaceBetween: 20,
     watchSlidesProgress: true,
     loop: true,
     watchOverflow: true,
     navigation: {
-      nextEl: '.certs__btns .swiper-button-next',
-      prevEl: '.certs__btns .swiper-button-prev',
+      nextEl: $(this).parent().find('.certs__btns').find(".swiper-button-next"),
+      prevEl:  $(this).parent().find('.certs__btns').find(".swiper-button-prev"),
     },
     pagination: {
-      el: '.certs__btns .swiper-dots',
+      el: $(this).parent().find('.certs__btns').find(".swiper-dots"),
     },
     breakpoints: {
       900: {
@@ -188,6 +198,9 @@
         spaceBetween: 20,
       },
     },
-  });
+            
+    });
+});
+
 
 })(jQuery);
