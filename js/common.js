@@ -202,5 +202,30 @@
     });
 });
 
+    $('.slider-team').each(function(){
+        var swiper = new Swiper(this, {
+         slidesPerView: 2,
+    spaceBetween: 20,
+    watchSlidesProgress: true,
+    loop: true,
+    watchOverflow: true,
+    navigation: {
+      nextEl: $(this).parent().find('.certs__btns').find(".swiper-button-next"),
+      prevEl:  $(this).parent().find('.certs__btns').find(".swiper-button-prev"),
+    },
+    breakpoints: {
+      900: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      650: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    },
+            
+    });
+});
+
 
 })(jQuery);
