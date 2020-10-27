@@ -11447,6 +11447,9 @@ background-size: 39px 39px;
   color: #22abc5;
   font-weight: 700;
 }
+.slider__wrapper .swiper-dots {
+  display: none;
+}
 
 @media screen and (max-width: 1400px) {
   .wrapper-inner-page {
@@ -11461,6 +11464,15 @@ background-size: 39px 39px;
   .selection {
     background-position: right -300px top;
   }
+.slider__wrapper .swiper-dots {
+ display: flex; 
+}
+.slider__wrapper .certs__btns {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 }
 @media screen and (max-width: 992px) {
 .card-wrap__line {
