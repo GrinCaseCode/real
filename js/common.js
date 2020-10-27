@@ -213,6 +213,9 @@
       nextEl: $(this).parent().find('.certs__btns').find(".swiper-button-next"),
       prevEl:  $(this).parent().find('.certs__btns').find(".swiper-button-prev"),
     },
+    pagination: {
+      el: $(this).parent().find('.certs__btns').find(".swiper-dots"),
+    },
     breakpoints: {
       900: {
         slidesPerView: 4,
