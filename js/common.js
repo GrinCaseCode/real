@@ -22,6 +22,16 @@
     scrolling: 'auto'
   });
 
+ $('.fancybox-main').fancybox({
+  beforeShow : function(){
+ $(".fancybox-skin").addClass("fancybox-skin_main");
+}
+}); 
+ $('.fancybox-page').fancybox({
+  beforeShow : function(){
+ $(".fancybox-skin").addClass("fancybox-skin_page");
+}
+}); 
   /* Плавный скролл к якорю для всех ссылок с классом "inner-link" */
   $(function(){
     $('.inner-link[href^="#"]').click(function(){
@@ -39,9 +49,7 @@
     return false;
   });
 
-  $('.burger').click(function() {
-    $('.header__bottom').toggleClass('active');
-  });
+  
 
   /* Открытие / закрытие модалок (кроме карты) */
   $('a.open-modal').click(function(event){
@@ -109,7 +117,7 @@
   });
 
   // Табы
-  $('.serv__nav > li > a').click(function(event) {
+  $('.serv__nav:not(.serv__nav_catalog) > li > a').click(function(event) {
     event.preventDefault();
     var _href = $(this).attr('href');
     $(this).parent().siblings().removeClass('current');
@@ -130,15 +138,50 @@
     $(selectTab).fadeIn();
   });
 
+  $('.tabs-prices li a').click(function(event) {
+    event.preventDefault();
+    $(this).parent().parent().find("li").removeClass('active');
+    $(this).parent().addClass('active');
+    $(this).parent().parent().siblings(".tab-container-price").find(".tab-pane-prices").hide();
+    var selectTab2 = $(this).attr("href");
+    $(selectTab2).fadeIn();
+  });
+
   $('img').on('dragstart', function (event) {
     event.preventDefault();
   });
 
-  if (window.matchMedia('(max-width: 991px)').matches) {
-    $('.header__bottom .burger').addClass('active');
-  }
+  $(".btn-main_filter").click(function() {
+    $(".serv__nav_catalog").slideToggle(200);
+     $(".serv__nav_catalog a").click(function() {
+    $(".serv__nav_catalog").slideUp(200);
+  });
+  });
+
+  
+
+// Кнопка sandwich 
+
+  $(".burger").click(function() {
+    if ($(".modal-menu").hasClass("active")) {
+      $(".modal-menu").removeClass("active");
+    } else {
+      $(".modal-menu").addClass("active");
+    }
+  });
+
+  $(".modal-menu a, .btn-close").click(function() {
+    $(".modal-menu").removeClass("active");
+  });
 
 
+$(document).mouseup(function (e){ 
+  var modal_menu = $(".modal-menu"); 
+  if (!modal_menu.is(e.target) 
+    && modal_menu.has(e.target).length === 0) { 
+  $(".modal-menu").removeClass("active");
+}
+});
   /* СЛАЙДЕРЫ */
 
   var teamSlider = new Swiper('#team__slider', {
