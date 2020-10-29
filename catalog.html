@@ -9,10 +9,10 @@
   <meta name="format-detection" content="telephone=no">
   <link rel="shortcut icon" href="favicon.png" />
   <link rel="stylesheet" href="libs/normalize.min.css">
-<link rel="stylesheet" href="libs/animate.css">
-<link rel="stylesheet" href="libs/swiper/swiper.min.css">
-<link rel="stylesheet" href="libs/nice-select/nice-select.min.css">
-<link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="libs/animate.css">
+  <link rel="stylesheet" href="libs/swiper/swiper.min.css">
+  <link rel="stylesheet" href="libs/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="css/main.css?ver=1.4">
   <!-- Template Basic Images Start-->
   <!-- Template Basic Images End-->
   <!-- Custom Browsers Color Start-->
@@ -78,7 +78,7 @@
       </div>
       <!-- /.header__wrap-->
     </div>
-     <div class="modal-menu">
+    <div class="modal-menu">
       <div class="modal-menu__container">
         <div class="btn-close"></div>
         <ul class="modal-menu__list">
@@ -99,124 +99,205 @@
   <!-- /.scr_choose-->
 
   <div class="page_wr wrapper-inner-page" id="page_wr">
-
-    <div class="card">
+    <div class="catalog">
       <div class="container">
-
-        <div class="breadcumbs">
-          <li><a href="#">Главная</a><span>/</span></li>
-          <li><a href="#">Кадастровые услуги</a><span>/</span></li>
-          <li>Разработка межевого плана</li>
+        <div class="row">
+          <div class="col-lg-3">
+            <a href="#" class="btn-main btn-main_filter">Фильтр</a>
+            <ul class="serv__nav serv__nav_catalog">
+              <li class="current">
+                <a href="#">
+                  <span class="serv__nav-icon">
+                    <svg class="icon">
+                      <use xlink:href="img/svg/sprite.svg#serv-1"></use>
+                    </svg>
+                  </span>
+                  <span class="serv__nav-text">Кадастровые услуги</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="serv__nav-icon">
+                    <svg class="icon">
+                      <use xlink:href="img/svg/sprite.svg#serv-2"></use>
+                    </svg>
+                  </span>
+                  <span class="serv__nav-text">Геодезические работы</span>
+                </a>
+              </li>            
+              <li><a href="#">
+                <span class="serv__nav-icon">
+                  <svg class="icon">
+                    <use xlink:href="img/svg/sprite.svg#serv-3"></use>
+                  </svg>
+                </span>
+                <span class="serv__nav-text">Юридические услуги</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="serv__nav-icon">
+                  <svg class="icon">
+                    <use xlink:href="img/svg/sprite.svg#serv-4"></use>
+                  </svg>
+                </span>
+                <span class="serv__nav-text">Услуги<br> для бизнеса</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="serv__nav-icon">
+                  <svg class="icon">
+                    <use xlink:href="img/svg/sprite.svg#serv-5"></use>
+                  </svg>
+                </span>
+                <span class="serv__nav-text">Подбор земельных участков</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="serv__nav-icon">
+                  <svg class="icon">
+                    <use xlink:href="img/svg/sprite.svg#serv-6"></use>
+                  </svg>
+                </span>
+                <span class="serv__nav-text">Проектировочные работы</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="serv__nav-icon">
+                  <svg class="icon">
+                    <use xlink:href="img/svg/sprite.svg#serv-7"></use>
+                  </svg>
+                </span>
+                <span class="serv__nav-text">Строительство домов и&nbsp;коттеджейи</span>
+              </a>
+            </li>
+          </ul>
         </div>
-
-        <div class="card-wrap">
-          <div class="card-wrap__name">Пример межевого плана, выполненного ООО «Реал»</div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="card-wrap__image">
-                <img src="img/card.jpg" alt="alt">
+        <div class="col-lg-9">
+          <ul class="list-btns">
+            <li class="active"><a href="#">Все услуги</a></li>
+            <li><a href="#">Для земельных участков</a></li>
+            <li><a href="#">Для объектов строительства</a></li>
+          </ul>
+          <div class="row row_catalog">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="item-catalog">
+                <div class="item-catalog__image">
+                  <img src="img/catalog1.jpg" alt="alt">
+                </div>
+                <div class="item-catalog__name">Уточнение границ земельного участка</div>
+                <div class="item-catalog__bottom">
+                  <div class="item-catalog__price">от 4500 Р</div>
+                  <a href="#" class="btn-main">Подробнее</a>
+                </div>
               </div>
-              <a href="#" class="link-download">Скачать</a>
             </div>
-            <div class="col-md-6">
-              <div class="card-wrap__title">Услуга «Разработка межевого плана» включает:</div>
-              <ul class="list-main">
-                <li>Исчерпывающие консультации до получения результата </li>
-                <li>Выезд геодезиста на замеры </li>
-                <li>Непосредственная разработка межевого плана</li>
-                <li>Получение исходных данных, работа с государственными базами данных</li>
-              </ul>
-              <div class="card-wrap__line">
-                <div class="card-price">
-                  <p>Цена: </p>
-                  <strong>от 4 500 Р</strong>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="item-catalog">
+                <div class="item-catalog__image">
+                  <img src="img/catalog2.jpg" alt="alt">
                 </div>
-                <div class="card-price">
-                  <p>Сроки: </p>
-                  <strong>от 5 рабочих дней</strong>
+                <div class="item-catalog__name">Технический план земельного участка</div>
+                <div class="item-catalog__bottom">
+                  <div class="item-catalog__price">от 4500 Р</div>
+                  <a href="#" class="btn-main">Подробнее</a>
                 </div>
               </div>
-              <div class="card-wrap__line">
-                <div class="btn__wrap btn__wrap--blue btn__wrap_page">
-                 <a href="#" class="btn btn--blue">Заказать</a>
-               </div>
-               <div class="btn__wrap btn__wrap--blue">
-                <a href="#" class="btn btn--blue">Заказать с рассрочкой на 3 месяца</a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="item-catalog">
+                <div class="item-catalog__image">
+                  <img src="img/catalog3.jpg" alt="alt">
+                </div>
+                <div class="item-catalog__name">Разработка межевого плана земельного участка</div>
+                <div class="item-catalog__bottom">
+                  <div class="item-catalog__price">от 4500 Р</div>
+                  <a href="#" class="btn-main">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="item-catalog">
+                <div class="item-catalog__image">
+                  <img src="img/catalog2.jpg" alt="alt">
+                </div>
+                <div class="item-catalog__name">Технический план земельного участка</div>
+                <div class="item-catalog__bottom">
+                  <div class="item-catalog__price">от 4500 Р</div>
+                  <a href="#" class="btn-main">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="item-catalog">
+                <div class="item-catalog__image">
+                  <img src="img/catalog3.jpg" alt="alt">
+                </div>
+                <div class="item-catalog__name">Разработка межевого плана земельного участка</div>
+                <div class="item-catalog__bottom">
+                  <div class="item-catalog__price">от 4500 Р</div>
+                  <a href="#" class="btn-main">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="item-catalog">
+                <div class="item-catalog__image">
+                  <img src="img/catalog1.jpg" alt="alt">
+                </div>
+                <div class="item-catalog__name">Уточнение границ земельного участка</div>
+                <div class="item-catalog__bottom">
+                  <div class="item-catalog__price">от 4500 Р</div>
+                  <a href="#" class="btn-main">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="item-catalog">
+                <div class="item-catalog__image">
+                  <img src="img/catalog1.jpg" alt="alt">
+                </div>
+                <div class="item-catalog__name">Уточнение границ земельного участка</div>
+                <div class="item-catalog__bottom">
+                  <div class="item-catalog__price">от 4500 Р</div>
+                  <a href="#" class="btn-main">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="item-catalog">
+                <div class="item-catalog__image">
+                  <img src="img/catalog2.jpg" alt="alt">
+                </div>
+                <div class="item-catalog__name">Технический план земельного участка</div>
+                <div class="item-catalog__bottom">
+                  <div class="item-catalog__price">от 4500 Р</div>
+                  <a href="#" class="btn-main">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="item-catalog">
+                <div class="item-catalog__image">
+                  <img src="img/catalog3.jpg" alt="alt">
+                </div>
+                <div class="item-catalog__name">Разработка межевого плана земельного участка</div>
+                <div class="item-catalog__bottom">
+                  <div class="item-catalog__price">от 4500 Р</div>
+                  <a href="#" class="btn-main">Подробнее</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="card-wrap">
-        <ul class="tabs">
-          <li class="active"><a href="#tab_card1">Описание услуги</a></li>
-          <li><a href="#tab_card2">Пакетные предложения</a></li>
-          <li><a href="#tab_card3">Оплата и гарантии</a></li>
-        </ul>
-        <div class="tab-container">
-          <div class="tab-pane" id="tab_card1">
-            <div class="row">
-              <div class="col-lg-7 pr_48">
-                <div class="text-main">
-                  <p><strong>Межевой план -</strong> это документ, который составлен на основе кадастрового плана соответствующей территории или выписки из Единого государственного реестра недвижимости о соответствующем земельном участке и в котором воспроизведены определенные сведения, внесенные в Единый государственный реестр недвижимости, и указаны сведения об образуемых земельном участке или земельных участках, либо о части или частях земельного участка, либо новые необходимые для внесения в Единый государственный реестр недвижимости сведения о земельном участке или земельных участках.</p>
-                  <p>Межевой план подготавливается в форме электронного документа и подписывается усиленной квалифицированной электронной подписью кадастрового инженера, подготовившего такой план. </p>
-                </div>
-              </div>
-              <div class="col-lg-5 col_pl">
-                <div class="text-main">
-                  <p><strong>В каких случаях нужен межевой план?</strong></p>
-                  <p><strong>1.</strong> Уточнение границ при обнаружении неточности в местоположении границ, границы не установлены в соответствии с земельным законодательством, возникли споры с соседями.</p>
-                  <p><strong>2.</strong> Исправление кадастровой ошибки (в случае некорректного внесения сведений о границах в Единичный государственный реестр недвижимости).</p>
-                  <p><strong>3.</strong> Образование нового земельного участка — сюда также относится объединение, раздел, выдел долей земельного участка с последующей постановкой на государственный кадастровый учет и регистрацией права собственности. В результате данной работы формируется пакет документов, содержащий полную информацию о качественных и количественных характеристик земельного участка.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane" id="tab_card2">
-            <div class="row">
-              <div class="col-lg-7 pr_48">
-                <div class="text-main">
-                  <p><strong>Межевой план -</strong> это документ, который составлен на основе кадастрового плана соответствующей территории или выписки из Единого государственного реестра недвижимости о соответствующем земельном участке и в котором воспроизведены определенные сведения, внесенные в Единый государственный реестр недвижимости, и указаны сведения об образуемых земельном участке или земельных участках, либо о части или частях земельного участка, либо новые необходимые для внесения в Единый государственный реестр недвижимости сведения о земельном участке или земельных участках.</p>
-                  <p>Межевой план подготавливается в форме электронного документа и подписывается усиленной квалифицированной электронной подписью кадастрового инженера, подготовившего такой план. </p>
-                </div>
-              </div>
-              <div class="col-lg-5 col_pl">
-                <div class="text-main">
-                  <p><strong>В каких случаях нужен межевой план?</strong></p>
-                  <p><strong>1.</strong> Уточнение границ при обнаружении неточности в местоположении границ, границы не установлены в соответствии с земельным законодательством, возникли споры с соседями.</p>
-                  <p><strong>2.</strong> Исправление кадастровой ошибки (в случае некорректного внесения сведений о границах в Единичный государственный реестр недвижимости).</p>
-                  <p><strong>3.</strong> Образование нового земельного участка — сюда также относится объединение, раздел, выдел долей земельного участка с последующей постановкой на государственный кадастровый учет и регистрацией права собственности. В результате данной работы формируется пакет документов, содержащий полную информацию о качественных и количественных характеристик земельного участка.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane" id="tab_card3">
-            <div class="row">
-              <div class="col-lg-7 pr_48">
-                <div class="text-main">
-                  <p><strong>Межевой план -</strong> это документ, который составлен на основе кадастрового плана соответствующей территории или выписки из Единого государственного реестра недвижимости о соответствующем земельном участке и в котором воспроизведены определенные сведения, внесенные в Единый государственный реестр недвижимости, и указаны сведения об образуемых земельном участке или земельных участках, либо о части или частях земельного участка, либо новые необходимые для внесения в Единый государственный реестр недвижимости сведения о земельном участке или земельных участках.</p>
-                  <p>Межевой план подготавливается в форме электронного документа и подписывается усиленной квалифицированной электронной подписью кадастрового инженера, подготовившего такой план. </p>
-                </div>
-              </div>
-              <div class="col-lg-5 col_pl">
-                <div class="text-main">
-                  <p><strong>В каких случаях нужен межевой план?</strong></p>
-                  <p><strong>1.</strong> Уточнение границ при обнаружении неточности в местоположении границ, границы не установлены в соответствии с земельным законодательством, возникли споры с соседями.</p>
-                  <p><strong>2.</strong> Исправление кадастровой ошибки (в случае некорректного внесения сведений о границах в Единичный государственный реестр недвижимости).</p>
-                  <p><strong>3.</strong> Образование нового земельного участка — сюда также относится объединение, раздел, выдел долей земельного участка с последующей постановкой на государственный кадастровый учет и регистрацией права собственности. В результате данной работы формируется пакет документов, содержащий полную информацию о качественных и количественных характеристик земельного участка.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
-  <!-- /.card-->
 
-   <section class="scr_lead lead" id="scr_lead">
+  <section class="scr_lead lead" id="scr_lead">
         <div class="scr1__cloud scr1__cloud--lead"></div>
 
         <div class="container">
@@ -476,6 +557,7 @@
 </div>
 
 
+
 <script src="js//libs/jquery.min.js"></script>
 <script src="js/libs/jquery.lazyload.min.js"></script>
 <script src="js/libs/wow.min.js"></script>
@@ -486,6 +568,6 @@
 <script src="libs/fancybox/helpers/jquery.fancybox-buttons.js"></script>
 <script src="libs/swiper/swiper.js"></script>
 <script src="libs/nice-select/jquery.nice-select.min.js"></script>
-<script src="js/common.js"></script>
+<script src="js/common.js?ver=1.4"></script>
 </body>
 </html>

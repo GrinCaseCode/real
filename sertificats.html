@@ -8,6 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="format-detection" content="telephone=no">
   <link rel="shortcut icon" href="favicon.png" />
+  <link rel="stylesheet" href="libs/normalize.min.css">
+<link rel="stylesheet" href="libs/animate.css">
+<link rel="stylesheet" href="libs/swiper/swiper.min.css">
+<link rel="stylesheet" href="libs/nice-select/nice-select.min.css">
+<link rel="stylesheet" href="css/main.css">
   <!-- Template Basic Images Start-->
   <!-- Template Basic Images End-->
   <!-- Custom Browsers Color Start-->
@@ -64,7 +69,7 @@
               <li><a href="#">Кадастровые услуги<span></span></a></li>
               <li><a href="#">Геодезические работы<span></span></a></li>
               <li><a href="#">Юридические услуги<span></span></a></li>
-              <li><a href="#">Подбор участков в Севастополе<span></span></a></li>
+              <li><a href="#modal-map" class="fancybox-main">Подбор участков в Севастополе<span></span></a></li>
               <li><a href="#">Строительство домов</a></li>
             </ul>
           </div>
@@ -72,6 +77,20 @@
         </div>
       </div>
       <!-- /.header__wrap-->
+    </div>
+     <div class="modal-menu">
+      <div class="modal-menu__container">
+        <div class="btn-close"></div>
+        <ul class="modal-menu__list">
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Каталог услуг</a></li>
+          <li><a href="#">лицензии</a></li>
+          <li><a href="#">блог</a></li>
+          <li><a href="#">контакты</a></li>
+        </ul>
+        <a href="#+88007759780" class="modal-menu__phone">8 (800) 775-97-80</a>
+        <div class="modal-menu__descr">Бесплатно по России</div>
+      </div>
     </div>
     <!-- /.container-->
   </header>
@@ -282,11 +301,114 @@
 </footer>
 <!-- /.footer-->
 
-<link rel="stylesheet" href="libs/normalize.min.css">
-<link rel="stylesheet" href="libs/animate.css">
-<link rel="stylesheet" href="libs/swiper/swiper.min.css">
-<link rel="stylesheet" href="libs/nice-select/nice-select.min.css">
-<link rel="stylesheet" href="css/main.css">
+<div id="modal-map" class="modal-block">
+  <div class="modal-wrap">
+    <div class="row">
+      <div class="col-lg-7 col_height">
+         <div class="modal-wrap__title">Районы Севастополя</div>
+         <div class="row">
+           <div class="col-md-5 col_modal">
+             <div class="modal-wrap__name">Административные</div>
+             <ul class="list-map">
+               <li>
+                 <div class="list-map__item list-map__item_1">Гагаринский</div>
+               </li>
+               <li>
+                 <div class="list-map__item list-map__item_2">Ленинский</div>
+               </li>
+               <li>
+                 <div class="list-map__item list-map__item_3">Нахимовский</div>
+               </li>
+               <li>
+                 <div class="list-map__item list-map__item_4">Балаклавский</div>
+               </li>
+               <li>
+                 <div class="list-map__item list-map__item_5">Инкерманский городской совет</div>
+               </li>
+             </ul>
+           </div>
+           <div class="col-md-7 col_modal">
+             <div class="modal-wrap__name">Разговорные</div>
+             <div class="row">
+               <div class="col-6">
+                 <ul class="list-modal">
+                   <li>1. Андреевка</li>
+                   <li>2. Кача</li>
+                   <li>3. Орловка</li>
+                   <li>4. Любимовка</li>
+                   <li>5. Учкуевка</li>
+                   <li>6. Северная сторона</li>
+                   <li>7. Инкерман</li>
+                   <li>8. Корабельная</li>
+                 </ul>
+               </div>
+               <div class="col-6">
+                 <ul class="list-modal">
+                   <li>9. Центр</li>
+                   <li>10. Стрелка</li>
+                   <li>11. Омега, Камыши</li>
+                   <li>12. Казачья Бухта</li>
+                   <li>13. Мыс Фиолент</li>
+                   <li>14. Балаклава</li>
+                   <li>15. Ласпи</li>
+                   <li>17. Байдары, горы</li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+         </div>
+      </div>
+      <div class="col-lg-5 col_height">
+        <div class="image-modal">
+          <img src="img/map1.jpg" alt="alt">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="callback" class="modal-block">
+  <div class="form wpcf7">
+    <form class="wpcf7-form">
+      <div class="page-title">Оставьте заявку</div>
+      <p class="form__title">Оставьте заявку и мы отправим Вам документ через 1 минуту</p>
+      <div class="form__item">
+        <span class="wpcf7-form-control-wrap your-name text-input">
+          <input class="wpcf7-form-control wpcf7-text wpcf7-name" type="text" name="your-name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Ваше имя">
+        </span>
+      </div>
+
+      <div class="form__item">
+        <span class="wpcf7-form-control-wrap your-tel text-input">
+          <input class="wpcf7-form-control wpcf7-text wpcf7-tel" type="tel" name="your-tel" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Номер телефона">
+        </span>
+      </div>
+
+      <div class="form__item form__item--submit">
+        <div class="btn__wrap btn__wrap--general">
+          <input class="wpcf7-form-control wpcf7-submit btn btn--general" type="submit" value="Отправить">
+        </div>
+      </div>
+
+      <div class="form__item">
+        <span class="wpcf7-form-control-wrap accept">
+          <span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required">
+            <span class="wpcf7-list-item">
+              <label>
+                <input type="checkbox" name="accept" value="Согласие на обработку персональных данных" checked="checked">
+                <span class="wpcf7-list-item-label">Я согласен с политикой конфиденциальности
+                  <i class="accept__icon"></i>
+                </span>
+              </label>
+            </span>
+          </span>
+        </span>
+      </div>
+    </form>
+  </div>
+</div>
+
+
 <script src="js//libs/jquery.min.js"></script>
 <script src="js/libs/jquery.lazyload.min.js"></script>
 <script src="js/libs/wow.min.js"></script>
