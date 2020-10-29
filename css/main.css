@@ -11675,12 +11675,13 @@ line-height: 20px;
   margin-bottom: 5px;
 }
 .serv__nav_catalog > li > a {
-  padding-left: 0;
+  padding-left: 15px;
       min-height: 72px;
   padding-right: 10px;
 }
 .serv__nav_catalog .serv__nav-icon {
   padding-right: 11px;
+  margin-right: 5px;
 }
 .serv__nav_catalog .serv__nav-text {
   font-size: 14px;
