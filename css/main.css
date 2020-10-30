@@ -12430,7 +12430,7 @@ z-index: -1;
   .tabs-prices {
     margin: 0 -5px;
   }
-  .tabs-prices__icon svg {
+  .tabs-prices__icon svg { 
     width: 34px;
     height: 34px;
 }
