@@ -12423,6 +12423,8 @@ z-index: -1;
     padding-left: 55px;
     padding-right: 10px;
     font-size: 12px;
+    max-width: 100%;
+    width: 100%;
     line-height: 17px;
   }
   .tabs-prices {
