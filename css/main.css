@@ -12698,6 +12698,9 @@ background-position: 9px 35px;
 .scr1__title {
     line-height: 31px;
     }
+    .btn-close {
+      margin-bottom: 45px;
+    }
 } 
 @media screen and (min-width: 767px) {
 .scr1__cont .btn__wrap--blue .btn--blue {
