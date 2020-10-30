@@ -12593,6 +12593,7 @@ background-position: 9px 35px;
   }
   .modal-menu {
     width: 100%;
+    padding-top: 20px;
   }
   .item-catalog__image {
     height: 200px;
